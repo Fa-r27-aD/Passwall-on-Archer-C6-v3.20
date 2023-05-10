@@ -1,6 +1,3 @@
-#Passwall-on-Archer-C6-v3.20
-target/ramips/mt7621
-(https://downloads.openwrt.org/releases/22.03.5/targets/ramips/mt7621/)
 
 # How To :
 
@@ -8,9 +5,10 @@ Install Xray-core on TP-Link Archer C6 V3.20 Temp Space :
 
 Requirement : 50MB free Temp Space & 5MB free Disk Space
 
-First you need to install Passwall or Passwall 2 (Passwall 2 is recommended). I recommend entering the commands in SSH, Just make sure that the installation of Passwall has prerequisites, which I put below the installation link for you. If you want to do this manually without SSH, you have to manually download the prerequisites and install them in LuCI in the Software section.
+First you need to install Passwall or Passwall2 (Passwall2 is recommended). I recommend entering the commands in SSH, Just make sure that the installation of Passwall has prerequisites, which I put below the installation link for you. If you want to do this manually without SSH, you have to manually download the prerequisites and install them in LuCI in the Software section.
 
-Go ahead like this on SSH:
+A. Install prerequisites:
+
 1. Install "shadowsocksr-libev-ssr-local"
 2. Install "shadowsocksr-libev-ssr-redir"
 3. Install "simple-obfs"
@@ -22,25 +20,31 @@ opkg install shadowsocksr-libev-ssr-redir
 opkg install simple-obfs
 opkg install tcping
 ```
+B. Install Service:
 
-# Install Service :
-
-1- Connect to your router via SSH. You can use PuTTy software and enter the following command in it:
+Enter the following command in SSH:
 ```
-wget https://raw.githubusercontent.com/amirhosseinchoghaei/mi4agigabit/main/amirhossein.sh && chmod 777 amirhossein.sh && sh amirhossein.sh
+wget https://raw.githubusercontent.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/main/install.sh && chmod 777 install.sh && sh install.sh
 ```
 
+C. Install Passwall2:
 
-2- Go to Passwall > AppUpdate Change Xray App Path to : /tmp/usr/bin/xray 
+1. Install with SSH:
+```
+cd /tmp
+wget https://github.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/blob/main/Passwall2/luci-app-passwall2_1.15-1_all.ipk
+opkg install luci-app-passwall2_1.15-1_all.ipk
+rm luci-app-passwall2_1.15-1_all.ipk
+```
+2. Install Manualy
 
-![This is an image](https://pars-space.ir/wp-content/uploads/2023/03/Sp.jpg)
+Download the file "luci-app-passwall2_1.15-1_all.ipk" from the Passwall2 folder and install it in the Software section of the LuCI user interface.
 
-Done !
+D. Final setup of Passwall:
 
-![This is an image](https://pars-space.ir/wp-content/uploads/2023/03/Passwall.jpg)
+Now go to Services -> Passwall 2 in Passwall 2 menu go to AppUpdate tab and change Xray App Path to : /tmp/usr/bin/xray
 
->>> when your router rebooted , it's takes about 3 min to start passwall with xray-core ...
-
+Note that xray-core will be automatically installed in Temp Space when the router reboots.
 
 
 
