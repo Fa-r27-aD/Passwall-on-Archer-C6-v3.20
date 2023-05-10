@@ -6,17 +6,14 @@ target/ramips/mt7621
 
 
 
-Install xray-core on Archer C6 V3.20 Temp Space :
+Install Xray-core on Archer C6 V3.20 Temp Space :
 
-Hi Guys if you want to run v2ray shadowsocks on your router , First You should install openwrtOS and then install passwall Package 
-but there is a problem !!! your router disk space is just 8mb so not enough space to install xray ...
-but Don't Worry i have a solution ... :)
+First you need to install Passwall or Passwall 2 (Passwall 2 is recommended). I recommend entering the commands in SSH, but you can also do the process manually! Just make sure that the installation of Passwall has prerequisites, which I put below the installation link for you.
 
-(How to install Passwall on Openwrt : https://www.youtube.com/watch?v=f4-GUnCK2Wo&t=520s&ab_channel=AmirHosseinChoghaei)
 
 # Install Service :
 
-1-
+1- Connect to your router via SSH. You can use PuTTy software and enter the following command in it:
 ```
 wget https://raw.githubusercontent.com/amirhosseinchoghaei/mi4agigabit/main/amirhossein.sh && chmod 777 amirhossein.sh && sh amirhossein.sh
 ```
