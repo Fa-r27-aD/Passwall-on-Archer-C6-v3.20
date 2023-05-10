@@ -23,20 +23,20 @@ clear
 
 cd /root/
 
-wget https://raw.githubusercontent.com/amirhosseinchoghaei/mi4agigabit/main/owo.sh
+wget https://raw.githubusercontent.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/main/installcore.sh
 
-chmod 777 owo.sh
+chmod 777 installcore.sh
 
 cd /etc/init.d/
 
-wget https://raw.githubusercontent.com/amirhosseinchoghaei/mi4agigabit/main/amir
+wget https://raw.githubusercontent.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/main/runservice
 
-chmod +x /etc/init.d/amir
+chmod +x /etc/init.d/runservice
 
-/etc/init.d/amir enable
+/etc/init.d/runservice enable
 
 echo -e "${GREEN}Starting Service ... ${ENDCOLOR}"
 
-/etc/init.d/amir start
+/etc/init.d/runservice start
 
-echo -e "${GREEN} Made With Love By : AmirHossein Choghaei ${ENDCOLOR}"
+echo -e "${GREEN} Done! ${ENDCOLOR}"
