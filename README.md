@@ -1,8 +1,8 @@
-#install_v2ray_xray_on_openwrt
-Target Platform	: ramips/mt7621 : [Support Devices List](https://downloads.openwrt.org/releases/22.03.3/targets/ramips/mt7621/)
+#Passwall-on-Archer-C6-v3.20
+target/ramips/mt7621 : (https://downloads.openwrt.org/releases/22.03.5/targets/ramips/mt7621/)
 
 
-# requirement : 38MB free "Temp Space" & 1MB free "Disk Space"
+# Requirement : 50MB free Temp Space & 5MB free Disk Space
 
 
 
