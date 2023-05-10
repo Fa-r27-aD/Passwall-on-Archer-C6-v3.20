@@ -36,7 +36,7 @@ wget https://github.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/blob/main/Passwall
 opkg install luci-app-passwall2_1.15-1_all.ipk
 rm luci-app-passwall2_1.15-1_all.ipk
 ```
-2. Install Manualy
+2. Install Manually
 
 Download the file "luci-app-passwall2_1.15-1_all.ipk" from the Passwall2 folder and install it in the Software section of the LuCI user interface.
 
