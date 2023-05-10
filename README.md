@@ -3,7 +3,7 @@
 
 Install Xray-core on TP-Link Archer C6 V3.20 Temp Space :
 
-Requirement : 50MB free Temp Space & 5MB free Disk Space
+Requirement : 50MB free Temp Space & 8MB free Disk Space
 
 First you need to install Passwall or Passwall2 (Passwall2 is recommended). I recommend entering the commands in SSH, Just make sure that the installation of Passwall has prerequisites, which I put below the installation link for you. If you want to do this manually without SSH, you have to manually download the prerequisites and install them in LuCI in the Software section.
 
