@@ -8,6 +8,6 @@ echo "Nice !"
 
 ping -c 30 127.0.0.1
 
-    sh /root/owo.sh
+    sh /root/installcore.sh
 
 }
