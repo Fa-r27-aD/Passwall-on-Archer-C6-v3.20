@@ -1,13 +1,12 @@
 #Passwall-on-Archer-C6-v3.20
-target/ramips/mt7621 : (https://downloads.openwrt.org/releases/22.03.5/targets/ramips/mt7621/)
-
+target/ramips/mt7621
+(https://downloads.openwrt.org/releases/22.03.5/targets/ramips/mt7621/)
 
 # Requirement : 50MB free Temp Space & 5MB free Disk Space
 
 
 
-
-install v2ray , xray-core , i'm trying to install on mi 4a gigabit :
+Install xray-core on Archer C6 V3.20 Temp Space :
 
 Hi Guys if you want to run v2ray shadowsocks on your router , First You should install openwrtOS and then install passwall Package 
 but there is a problem !!! your router disk space is just 8mb so not enough space to install xray ...
