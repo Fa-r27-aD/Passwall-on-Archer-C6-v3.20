@@ -4,7 +4,7 @@ START=99
 
 start(){
 
-echo "Nice !"
+echo "Yeah!"
 
 ping -c 30 127.0.0.1
 
