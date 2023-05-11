@@ -15,6 +15,16 @@ A. Install prerequisites:
 4. Install "tcping"
 ```
 opkg update
+opkg install ipset
+opkg install iptables 
+opkg install iptables-legacy 
+opkg install iptables-mod-conntrack-extra 
+opkg install iptables-mod-iprange 
+opkg install iptables-mod-socket 
+opkg install iptables-mod-tproxy 
+opkg install kmod-ipt-nat
+opkg remove dnsmasq
+opkg install dnsmasq-full
 opkg install shadowsocksr-libev-ssr-local
 opkg install shadowsocksr-libev-ssr-redir
 opkg install simple-obfs
