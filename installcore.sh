@@ -11,23 +11,18 @@ service passwall2 stop
 cd /tmp
 
 # Download the xray-core package
-if wget https://mirror-03.infra.openwrt.org/releases/23.05.3/packages/mipsel_24kc/packages/xray-core_1.8.11-1_mipsel_24kc.ipk; then
-    echo "$(date) - Download successful" >> /var/log/installcore.log
-else
-    echo "$(date) - Download failed" >> /var/log/installcore.log
-    exit 1
-fi
+wget https://mirror-03.infra.openwrt.org/releases/23.05.3/packages/mipsel_24kc/packages/xray-core_1.8.11-1_mipsel_24kc.ipk
 
 # Install the xray-core package to the RAM directory
-if opkg install xray-core_1.8.11-1_mipsel_24kc.ipk -d ram; then
-    echo "$(date) - Installation successful" >> /var/log/installcore.log
-else
-    echo "$(date) - Installation failed" >> /var/log/installcore.log
-    exit 1
-fi
+opkg install xray-core_1.8.11-1_mipsel_24kc.ipk -d ram
 
 # Remove the downloaded package file to clean up
 rm xray-core_1.8.11-1_mipsel_24kc.ipk
+
+# Install the Geo-files to the RAM directory
+
+opkg install v2ray-geoip -d ram
+opkg install v2ray-geosite -d ram
 
 # Restart the passwall and passwall2 services
 service passwall restart
