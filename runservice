@@ -4,8 +4,6 @@ START=99
 
 start(){
 
-echo "Yeah!"
-
 ping -c 30 127.0.0.1
 
     sh /root/installcore.sh
