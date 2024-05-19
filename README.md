@@ -16,7 +16,13 @@ wget https://raw.githubusercontent.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/mai
 
 B. Final setup of Passwall:
 
-Now go to Services -> Passwall 2 in Passwall 2 menu go to AppUpdate tab and change Xray App Path to : /tmp/usr/bin/xray
+for core setup:
+
+go to Services -> Passwall2 in Passwall2 menu go to AppUpdate tab and change Xray App Path to : /tmp/usr/bin/xray
+
+for geo-file setup:
+
+go to Services -> Passwall2 in Passwall2 menu go to RuleManage tab and change geo-file Path to : /tmp/usr/share/v2ray/
 
 Note that xray-core will be automatically installed in Temp Space when the router reboots.
 
