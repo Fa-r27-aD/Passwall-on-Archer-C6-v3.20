@@ -17,8 +17,8 @@ wget https://mirror-03.infra.openwrt.org/releases/23.05.3/packages/mipsel_24kc/p
 
 # Install the xray-core & geo-file packages to the RAM directory
 opkg install xray-core_1.8.11-1_mipsel_24kc.ipk -d ram
-opkg install v2ray-geoip -d ram
-opkg install v2ray-geosite -d ram
+opkg install v2ray-geoip_202404250042-1_all.ipk -d ram
+opkg install v2ray-geosite_20240426060244-1_all.ipk -d ram
 
 # Remove the downloaded package file to clean up
 rm xray-core_1.8.11-1_mipsel_24kc.ipk
