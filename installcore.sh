@@ -20,7 +20,6 @@ opkg install xray-core_1.8.11-1_mipsel_24kc.ipk -d ram
 rm xray-core_1.8.11-1_mipsel_24kc.ipk
 
 # Install the Geo-files to the RAM directory
-
 opkg install v2ray-geoip -d ram
 opkg install v2ray-geosite -d ram
 
