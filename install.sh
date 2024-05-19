@@ -7,6 +7,8 @@ opkg update
 opkg remove dnsmasq
 opkg install dnsmasq-full
 
+sleep 5
+
 # Install necessary kernel modules
 opkg install kmod-nft-socket
 opkg install kmod-nft-tproxy
@@ -17,14 +19,29 @@ cd /root/
 
 # Download and install needed packages
 wget https://github.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/blob/main/Passwall/dns2socks_2.1-2_mipsel_24kc.ipk
+opkg install dns2socks_2.1-2_mipsel_24kc.ipk
+sleep 2
 wget https://github.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/blob/main/Passwall/dns2tcp_1.1.0-1_mipsel_24kc.ipk
+opkg install dns2tcp_1.1.0-1_mipsel_24kc.ipk
+sleep 2
 wget https://github.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/blob/main/Passwall/ipt2socks_1.1.3-3_mipsel_24kc.ipk
+opkg install ipt2socks_1.1.3-3_mipsel_24kc.ipk
+sleep 2
 wget https://github.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/blob/main/Passwall/shadowsocksr-libev-ssr-local_2.5.6-11_mipsel_24kc.ipk
+opkg install shadowsocksr-libev-ssr-local_2.5.6-11_mipsel_24kc.ipk
+sleep 2
 wget https://github.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/blob/main/Passwall/shadowsocksr-libev-ssr-redir_2.5.6-11_mipsel_24kc.ipk
+opkg install shadowsocksr-libev-ssr-redir_2.5.6-11_mipsel_24kc.ipk
+sleep 2
 wget https://github.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/blob/main/Passwall/simple-obfs_0.0.5-1_mipsel_24kc.ipk
+opkg install simple-obfs_0.0.5-1_mipsel_24kc.ipk
+sleep 2
 wget https://github.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/blob/main/Passwall/tcping_0.3-1_mipsel_24kc.ipk
+opkg install tcping_0.3-1_mipsel_24kc.ipk
+sleep 2
 wget https://github.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/blob/main/Passwall/trojan-plus_10.0.3-2_mipsel_24kc.ipk
-opkg install *.ipk
+opkg install trojan-plus_10.0.3-2_mipsel_24kc.ipk
+sleep 2
 
 # Download and install luci-app-passwall2 package
 wget https://github.com/xiaorouji/openwrt-passwall2/releases/download/1.29-1/luci-23.05_luci-app-passwall2_1.29-1_all.ipk
