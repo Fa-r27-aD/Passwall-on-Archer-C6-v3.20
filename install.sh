@@ -13,6 +13,7 @@ sleep 5
 opkg install kmod-nft-socket
 opkg install kmod-nft-tproxy
 opkg install kmod-nft-nat
+opkg install unzip
 
 # Change to the root directory
 cd /root/
