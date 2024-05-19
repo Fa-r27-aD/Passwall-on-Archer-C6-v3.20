@@ -56,8 +56,7 @@ echo "Starting Service..."
 # Change to the root directory
 cd /root/
 
-# Download and install luci-app-passwall2 package
-wget https://github.com/xiaorouji/openwrt-passwall2/releases/download/1.29-1/luci-23.05_luci-app-passwall2_1.29-1_all.ipk
+# Install luci-app-passwall2 package
 opkg install luci-23.05_luci-app-passwall2_1.29-1_all.ipk
 
 # Clean up the downloaded files
