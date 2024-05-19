@@ -29,7 +29,7 @@ service passwall restart
 service passwall2 restart
 
 # Log completion
-echo "$(date) - Script completed successfully" >> /var/log/installcore.log
+echo "Script completed successfully"
 
 # Change back to the /root directory
 cd /root/
