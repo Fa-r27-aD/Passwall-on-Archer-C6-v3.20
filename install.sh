@@ -19,7 +19,7 @@ cd /root/
 
 # Download and install needed packages
 wget https://raw.githubusercontent.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/main/Passwall.zip
-unzip 
+unzip Passwall.zip
 opkg install dns2socks_2.1-2_mipsel_24kc.ipk
 sleep 2
 opkg install dns2tcp_1.1.0-1_mipsel_24kc.ipk
