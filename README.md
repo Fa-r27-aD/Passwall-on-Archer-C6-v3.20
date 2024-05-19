@@ -3,7 +3,7 @@
 
 Install Passwall2 & Install Xray-core on Router (TP-Link Archer C6 V3.20) Temp Space
 
-Requirement : 50MB free Temp Space & 8MB free Disk Space
+Requirement : 50MB free Temp Space & 8MB free Disk Space | OpenWRT 23.05.3
 
 This script automatically installs Passwall2 and all its prerequisites and then installs core in Temp Space.
 
