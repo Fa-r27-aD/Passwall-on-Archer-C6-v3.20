@@ -2,10 +2,13 @@
 
 START=99
 
-start(){
+start() {
+    # Log the start time
+    echo "$(date) - Starting installcore script" >> /var/log/installcore.log
 
-ping -c 30 127.0.0.1
+    # Ping localhost to simulate delay
+    ping -c 30 127.0.0.1
 
+    # Execute the installation script
     sh /root/installcore.sh
-
 }
