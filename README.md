@@ -7,7 +7,14 @@ Requirement : 50MB free Temp Space & 8MB free Disk Space
 
 This script automatically installs Passwall2 and all its prerequisites and then installs core in Temp Space.
 
-IMPORTANT. Final setup of Passwall:
+A. Install Service:
+
+Enter the following command in SSH:
+```
+wget https://raw.githubusercontent.com/Fa-r27-aD/Passwall-on-Archer-C6-v3.20/main/install.sh && chmod 777 install.sh && sh install.sh
+```
+
+B. Final setup of Passwall:
 
 Now go to Services -> Passwall 2 in Passwall 2 menu go to AppUpdate tab and change Xray App Path to : /tmp/usr/bin/xray
 
